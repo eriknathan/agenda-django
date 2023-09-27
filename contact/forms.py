@@ -11,7 +11,8 @@ class ContactForm(forms.ModelForm):
     picture = forms.ImageField(
         widget=forms.FileInput(
             attrs={'accept': 'image/*'}
-        )
+        ),
+        required=False
     )
 
     class Meta:
